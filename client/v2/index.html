@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>👕 Clear Fahion | Environmentally & human-friendly clothes</title>
   </head>
   <body>
     <h1>Clear fashion</h1>
+    <h0>
     <section id="options">
       <div id="show">
         <label for="show-select">Show:</label>
@@ -20,8 +22,12 @@
         <select name="page" id="page-select"> </select>
       </div>
       <div id="filters">
-        <span>By reasonable price</span>
-        <span>By recently released</span>
+        <label for="filter-select">Filter:</label>
+        <select name="filter" id="filter-select">
+          <option value="recent-product">By recent products</option>
+          <option value="reasonable-product">By reasonable price</option>
+          <option value="favorite-product">By favorite products</option>
+        </select>
         <div id="brand">
           <label for="brand-select">By brands:</label>
           <select name="brand" id="brand-select"> </select>
@@ -49,21 +55,22 @@
       </div>
       <div>
         <span>p50 price value</span>
-        <span>0</span>
+        <span id="p50">0</span>
       </div>
       <div>
         <span>p90 price value</span>
-        <span>0</span>
+        <span id="p90">0</span>
       </div>
       <div>
         <span>p95 price value</span>
-        <span>0</span>
+        <span id="p95">0</span>
       </div>
       <div>
         <span>Last released date</span>
-        <span>2020-01-01</span>
+        <span id="last-release-date">0</span>
       </div>
     </section>
+    </h0>
     <section id="products"></section>
     <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
   </body>
